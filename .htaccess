@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^(.*)/(.*)$ /seatmap/index.php?controller=$1Controller&action=$2 [L]
+
+    ErrorDocument 404 /seatmap/View/404notfound.html
+    DirectoryIndex index.php
+</IfModule>

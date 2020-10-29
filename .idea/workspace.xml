@@ -6,11 +6,44 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bd97d6b-092c-407a-9946-b66c1a7abe44" name="Default Changelist" comment="" />
+    <list default="true" id="a7eeacde-43ab-4d25-b4b6-6e1e2b4fc17b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/View/seatmap/add.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/View/seatmap/add.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/seatmap/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/View/seatmap/index.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/user/add_new.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/View/user/add_new.tpl" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Model/Database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/common/header.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/View/common/header.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/seatmap-management.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/seatmap-management.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/seatmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/seatmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/user.js" afterDir="false" />
+>>>>>>> 09a646aabd2098881810d13c7a844d17293d91d1
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +53,9 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ioUFdjZGFJqQkwXIrM0Ooaf9sa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1ioo4gxmFwugU85h5GQZ8awpQhp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,23 +63,38 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/View/user" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Apache24\htdocs\seatmap\View\user" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\t001964\Desktop\project\seatmap\src" />
+      <recent name="C:\Apache24\htdocs\seatmap" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7bd97d6b-092c-407a-9946-b66c1a7abe44" name="Default Changelist" comment="" />
-      <created>1602573336829</created>
+      <changelist id="a7eeacde-43ab-4d25-b4b6-6e1e2b4fc17b" name="Default Changelist" comment="" />
+      <created>1602583116966</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602573336829</updated>
-      <workItem from="1602573337984" duration="2658000" />
+      <updated>1602583116966</updated>
+      <workItem from="1602583118103" duration="1813000" />
+      <workItem from="1602638861482" duration="25682000" />
+      <workItem from="1602725085027" duration="26636000" />
+      <workItem from="1602811291501" duration="20011000" />
+      <workItem from="1603078361395" duration="1144000" />
+      <workItem from="1603081123988" duration="109000" />
+      <workItem from="1603082026743" duration="6242000" />
+      <workItem from="1603091338592" duration="7167000" />
+      <workItem from="1603157439860" duration="16098000" />
+      <workItem from="1603243188604" duration="24685000" />
+      <workItem from="1603329874288" duration="4287000" />
+      <workItem from="1603416582480" duration="3356000" />
     </task>
     <servers />
   </component>
@@ -64,5 +111,44 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2256" y="361" key="#SQL_Dialects" timestamp="1602811373850">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2256" y="361" key="#SQL_Dialects/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602811373850" />
+    <state x="2018" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602811469418">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2018" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602811469418" />
+    <state x="2624" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602649773229">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2624" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602649773229" />
+    <state x="2085" y="53" width="1261" height="950" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603334825324">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2085" y="53" width="1261" height="950" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603334825324" />
+    <state x="2695" y="243" key="NewPhpClassDialog" timestamp="1602643383948">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2695" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602643383948" />
+    <state x="2714" y="443" key="NewPhpFileDialog" timestamp="1602649861804">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2714" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602649861804" />
+    <state x="2713" y="222" key="RollbackChangesDialog" timestamp="1603334968166">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2713" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603334968166" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603268745086">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603268745086" />
+    <state x="2543" y="225" key="search.everywhere.popup" timestamp="1603162966221">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603162966221" />
   </component>
 </project>
