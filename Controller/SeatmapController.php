@@ -2,8 +2,10 @@
 include_once "Model/SeatmapModel.php";
 require_once "smarty/BaseSmarty.php";
 require "validators/SeatmapFormModel.php";
+include "Controller/BaseController.php";
 
-class SeatmapController
+
+class SeatmapController extends BaseController
 {
     public $breadcrumbs;
     public $message;
@@ -33,13 +35,6 @@ class SeatmapController
         $this->render('./seatmap/index.tpl');
     }
 
-    private function render(string $template)
-    {
-        $this->smarty->assign("breadcrumbs", $this->breadcrumbs);
-        $this->smarty->assign('activePage', $this->activePage);
-        $this->smarty->assign('message', $this->message);
-        $this->smarty->display($template);
-    }
 
     public function addSeatMap()
     {
@@ -72,7 +67,7 @@ class SeatmapController
     }
 
 
-    private function assignMessage($seatmap)
+    private function assignField($seatmap)
     {
         $this->smarty->assign('name', $seatmap['name']);
         $this->smarty->assign('description', $seatmap['description']);
@@ -124,7 +119,7 @@ class SeatmapController
             $this->message = 'Update seatmap fail.';
         $seatmap = $this->getSeatmap($seat_id);
         end:
-        $this->assignMessage($seatmap);
+        $this->assignField($seatmap);
         $this->render('./seatmap/edit.tpl');
     }
 

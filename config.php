@@ -12,8 +12,8 @@ define('LOGINED','logined');
 
 
 //user controller
-define('VALID_IMAGE_TYPES',['jpg','png']);
-define('LIMIT_IMAGE_SIZE',1000000);
+define('VALID_IMAGE_TYPES',array('jpg','png','jpeg','gif'));
+define('LIMIT_IMAGE_SIZE_MB',0.5);
 
 
 define('MAXIMUM_TEXT_FIELD_LENGTH', 100);

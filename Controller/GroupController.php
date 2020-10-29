@@ -33,7 +33,6 @@ class GroupController extends BaseController
     }
 
 
-
     public function index()
     {
         if (isset($_SESSION['message'])) {
@@ -46,52 +45,41 @@ class GroupController extends BaseController
     public function add()
     {
         $this->breadcrumbs['Add new group'] = '#';
-        if (!$this->isSubmit()) {
-            $this->render('./group/add_new.tpl');
-            return;
-        }
 
-        $this->formModel->load($_POST);
-        if (!$this->formModel->validate()) {
+        if ($this->isSubmit()) {
+            $this->formModel->load($_POST);
+            if ($this->formModel->validate()) {
+                $insert_id = $this->model->add($this->formModel->name, $$this->formModel->color);
+                $this->message = $insert_id ? 'Add group success' : 'Add group fail.';
+                $_SESSION['message'] = $this->message;
+                header("Location: /seatmap/group/index");
+            }
             $this->message = $this->formModel->getFirstError();
-            $this->render('./group/add_new.tpl');
-            return;
         }
-        $insert_id = $this->model->add($this->formModel->name, $$this->formModel->color);
-        if ($insert_id) {
-            $this->message = 'Add group success';
-        } else {
-            $this->message = 'Add group fail.';
-        }
-        $_SESSION['message'] = $this->message;
-        header("Location: /seatmap/group/index");
+        $this->render('./group/add_new.tpl');
     }
 
     public function update()
     {
         $this->breadcrumbs['Update group'] = '#';
-        $formModel = new GroupFormModel();
         $id = isset($_GET['id']) ? $_GET['id'] : null;
         if (!$this->isValidId($id)) {
             $this->render('404notfound.tpl');
             return;
         }
         $group = $this->getGroup($id);
-        if (!$this->isSubmit()) {
-            goto end;
+        if ($this->isSubmit()) {
+            $formModel = new GroupFormModel();
+            $formModel->load($_POST);
+
+            if ($formModel->validate()) {
+                $insert_id = $this->model->edit($id, $formModel->name, $formModel->color);
+                $this->message = $insert_id ? 'Update group success' : 'Update group fail.';
+            } else {
+                $this->message = $formModel->getFirstError();
+            }
         }
-        $formModel->load($_POST);
-        if (!$formModel->validate()) {
-            $this->message = $formModel->getFirstError();
-            goto end;
-        }
-        $insert_id = $this->model->edit($id, $formModel->name, $formModel->color);
-        if ($insert_id)
-            $this->message = 'Update group success';
-        else
-            $this->message = 'Update group fail.';
         $group = $this->getGroup($id);
-        end:
         $this->assignField($group);
         $this->render('./group/edit.tpl');
     }
